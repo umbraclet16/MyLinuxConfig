@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/mya/Documents/ardupilot/libraries/AP_Common'
+let g:netrw_dirhist_2='/home/mya/Desktop'
+let g:netrw_dirhist_3='/media/mya/S-WORK/study/毕业设计/学长的火炬/ArduCopter-3.0.1/ArduCopter'
+let g:netrw_dirhist_4='/home/quad906/.vim'
+let g:netrw_dirhist_5='/home/quad906/Github/ardupilot/libraries/AC_AttitudeControl'
+let g:netrw_dirhist_6='/home/quad906/Github/ardupilot/modules/PX4Firmware'
+let g:netrw_dirhist_7='/home/quad906/.vnc'
+let g:netrw_dirhist_8='/home/quad906/linux20160101.bak'
+let g:netrw_dirhist_9='/home/quad906/Github/Flying-PCB/Software/LARIX Flightcontroller/CORE_Larix_V1.0/_Quadrocopter'
