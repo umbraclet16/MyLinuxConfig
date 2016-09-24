@@ -1,0 +1,9 @@
+[user]
+	name = umbraclet16
+	email = 448101470@qq.com
+[push]
+	default = simple
+[core]
+	whitespace = cr-at-eol
+[credential]
+	helper = store
