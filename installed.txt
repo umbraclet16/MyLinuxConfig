@@ -1,0 +1,75 @@
+g++
+vim
+vim-athena	(others:vim-gnome,vim-gtk)
+cscope
+cmake
+nautilus-open-terminal
+git
+gitk
+gitg
+SmartGit	support github!
+tweak
+wine
+sogouinput
+GIMP
+dia
+shutter:	for print screen
+docky:		make ubuntu look like Mac OS X
+codeblocks
+htop		系统监控. system monitor is better
+godendict/stardict
+ctags
+wiznote
+im-config:	input method configuration
+flashplugin-installer
+unity-tweak-tool
+smplayer	视频播放器
+synaptic新力得软件包管理器
+p7zip-full
+rar
+emacs
+chromium
+subversion (i.e.svn)
+gfortran(fortran编译器，为了装cbc)
+doxygen
+qbittorrent
+计算器:extcalc, genius mathematics tool
+iptux配合windows的飞鸽传书(ipmsg)进行文件传输
+linx-tools-common(包括perf：分析在每个函数里面消耗的cpu时间等)
+texstudio 400多M...
+pel-tk, xzdec:	for texlive宏包管理器 tlmgr
+
+for compiling pixhawk:
+gawk
+genromfs
+ccache
+python-empy
+screen,minicom	用于打印串口数据
+===================
+win-linux共享桌面工具
+(以下使用rdp协议)
+xrdp
+rdesktop
+(以下使用vnc)
+vncviewer
+vnc4server
+(神器)
+synergy
+quicksynergy
+remmina(for deepin)
+===================
+eclipse
+weather-indicator
+birl:		visible ruijie
+chrome/chromium
+system load indicator
+keylock application indicator
+
+qt creator
+
+
+===================
+for markdown
+ReText      (not very good)
+haroopad
+
