@@ -17,8 +17,6 @@ echo "Output file => ${1%.*}"
 #############################################
 #
 # alias opencv="~/.compile_opencv.sh"
-# opencv opencvtest.c
-# ./opencvtest
 #
 #############################################
 # Note that the .bashrc is a hidden file in the $HOME directory 

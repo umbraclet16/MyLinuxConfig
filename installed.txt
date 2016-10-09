@@ -38,6 +38,7 @@ iptux配合windows的飞鸽传书(ipmsg)进行文件传输
 linx-tools-common(包括perf：分析在每个函数里面消耗的cpu时间等)
 texstudio 400多M...
 pel-tk, xzdec:	for texlive宏包管理器 tlmgr
+opencv-2.4.13
 
 for compiling pixhawk:
 gawk
