@@ -82,3 +82,6 @@ sphinx_rtd_theme
 for gitbook, not working!
 node
 npm
+
+for downloading videos/imgs/audios
+you-get
