@@ -85,3 +85,7 @@ npm
 
 for downloading videos/imgs/audios
 you-get
+
+video players:
+parole
+mplayer
