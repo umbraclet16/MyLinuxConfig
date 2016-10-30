@@ -78,3 +78,7 @@ for documentation
 doxygen
 sphinx
 sphinx_rtd_theme
+
+for gitbook, not working!
+node
+npm
