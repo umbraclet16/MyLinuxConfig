@@ -80,6 +80,7 @@ haroopad
 
 for documentation
 doxygen
+doxygen-gui(use command 'doxywizard' to open)
 sphinx
 sphinx_rtd_theme
 
