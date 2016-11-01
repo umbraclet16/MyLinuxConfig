@@ -46,6 +46,10 @@ genromfs
 ccache
 python-empy
 screen,minicom	用于打印串口数据
+
+for drone-kit
+python-pip,python-dev
+dronekit,dronekit-sitl(pip install)
 ===================
 win-linux共享桌面工具
 (以下使用rdp协议)
