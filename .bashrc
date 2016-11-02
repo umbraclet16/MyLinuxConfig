@@ -139,3 +139,7 @@ alias opencv="~/.compile_opencv.sh"
 ##################################################
 # ROS environment setup
 source /opt/ros/indigo/setup.bash
+
+##################################################
+# for ORB_SLAM(github.com/raulmur/ORB_SLAM)
+export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:/home/quad906/Github/computer_vision/ORB_SLAM
