@@ -31,15 +31,15 @@ emacs
 chromium
 subversion (i.e.svn)
 gfortran(fortran编译器，为了装cbc)
-doxygen
 qbittorrent
 计算器:extcalc, genius mathematics tool
 iptux配合windows的飞鸽传书(ipmsg)进行文件传输
 linx-tools-common(包括perf：分析在每个函数里面消耗的cpu时间等)
 texstudio 400多M...
 pel-tk, xzdec:	for texlive宏包管理器 tlmgr
-opencv-2.4.13
+aptitude: high-level interface to the package manager
 
+===================
 for compiling pixhawk:
 gawk
 genromfs
@@ -78,19 +78,34 @@ for markdown
 ReText      (not very good)
 haroopad
 
+===================
 for documentation
 doxygen
 doxygen-gui(use command 'doxywizard' to open)
 sphinx
 sphinx_rtd_theme
 
+===================
 for gitbook, not working!
 node
 npm
 
+===================
 for downloading videos/imgs/audios
 you-get
 
+===================
 video players:
 parole
 mplayer
+
+===================
+for SLAM
+opencv-2.4.13
+libpcl-all      : PCL library
+libboost-all-dev
+ros-indigo-desktop-full : for ubuntu 14.04, including: ROS, rqt, rviz,
+    robot-generic libraries, 2D/3D simulators and 2D/3D perception.
+    Indigo uses Gazebo 2(a robot simulation tool).
+    rqt is a Qt-based framework for GUI development for ROS.
+    rviz is 3D visualization tool for ROS.
