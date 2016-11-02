@@ -109,3 +109,4 @@ ros-indigo-desktop-full : for ubuntu 14.04, including: ROS, rqt, rviz,
     Indigo uses Gazebo 2(a robot simulation tool).
     rqt is a Qt-based framework for GUI development for ROS.
     rviz is 3D visualization tool for ROS.
+python-rosinstall
