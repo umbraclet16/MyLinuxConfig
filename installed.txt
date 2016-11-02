@@ -100,7 +100,7 @@ parole
 mplayer
 
 ===================
-for SLAM
+for SLAM(github.com/raulmur/ORB_SLAM)
 opencv-2.4.13
 libpcl-all      : PCL library
 libboost-all-dev
@@ -110,3 +110,5 @@ ros-indigo-desktop-full : for ubuntu 14.04, including: ROS, rqt, rviz,
     rqt is a Qt-based framework for GUI development for ROS.
     rviz is 3D visualization tool for ROS.
 python-rosinstall
+libblas-dev,liblapack-dev,libeigen3-dev
+    to compile g2o(github.com/RainerKuemmerle/g2o) to perform optimizations
