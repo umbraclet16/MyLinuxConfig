@@ -135,3 +135,7 @@ export INFOPATH=/usr/local/texlive/2014/texmf-dist/info:$INFOPATH
 ##################################################
 # this works together with .compile_opencv.sh for opencv
 alias opencv="~/.compile_opencv.sh"
+
+##################################################
+# ROS environment setup
+source /opt/ros/indigo/setup.bash
