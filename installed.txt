@@ -3,6 +3,7 @@ vim
 vim-athena	(others:vim-gnome,vim-gtk)
 cscope
 cmake
+cmake-qt-gui
 nautilus-open-terminal
 git
 gitk
@@ -112,3 +113,8 @@ ros-indigo-desktop-full : for ubuntu 14.04, including: ROS, rqt, rviz,
 python-rosinstall
 libblas-dev,liblapack-dev,libeigen3-dev
     to compile g2o(github.com/RainerKuemmerle/g2o) to perform optimizations
+
+for ORB_SLAM2(github.com/raulmur/ORB_SLAM2)
+libglew-dev     : for Pangolin(github.com/stevenlovegrove/Pangolin)
+Pangolin(github.com/stevenlovegrove/Pangolin)
+    (a lightweight portable rapid development library for managing OpenGL)
