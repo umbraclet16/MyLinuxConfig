@@ -102,8 +102,11 @@ parole
 mplayer
 
 ===================
-for SLAM(github.com/raulmur/ORB_SLAM)
+for computer vision
 opencv-2.4.13
+meshlab v1.3.2
+
+for SLAM(github.com/raulmur/ORB_SLAM)
 libpcl-all      : PCL library
 libboost-all-dev
 ros-indigo-desktop-full : for ubuntu 14.04, including: ROS, rqt, rviz,
