@@ -39,6 +39,7 @@ linx-tools-common(包括perf：分析在每个函数里面消耗的cpu时间等)
 texstudio 400多M...
 pel-tk, xzdec:	for texlive宏包管理器 tlmgr
 aptitude: high-level interface to the package manager
+samba
 
 ===================
 for compiling pixhawk:
