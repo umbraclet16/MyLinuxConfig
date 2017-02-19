@@ -1,6 +1,6 @@
 g++
 vim
-vim-athena	(others:vim-gnome,vim-gtk)
+gvim: vim-athena	(others:vim-gnome,vim-gtk)
 cscope
 cmake
 cmake-qt-gui
@@ -33,13 +33,29 @@ chromium
 subversion (i.e.svn)
 gfortran(fortran编译器，为了装cbc)
 qbittorrent
-计算器:extcalc, genius mathematics tool
+计算器:extcalc(concalc?), genius mathematics tool(genious-common?)
 iptux配合windows的飞鸽传书(ipmsg)进行文件传输
-linx-tools-common(包括perf：分析在每个函数里面消耗的cpu时间等)
-texstudio 400多M...
-pel-tk, xzdec:	for texlive宏包管理器 tlmgr
+linux-tools-common(包括perf：分析在每个函数里面消耗的cpu时间等)
 aptitude: high-level interface to the package manager
-samba
+samba,samba-common,system-config-samba,python-glade2,gksu
+scrot: capture a screenshot
+optipng: optimize PNG files
+mailutils
+sharutils
+tmux: terminal multiplexer
+krita: digital painting for artists
+dselect: Debian package management frontend
+python3-dev
+python3-pip
+xflux-gui(github.com/xflux-gui)
+ddd: Data Display Debugger(GDB,DBX,WDB,Ladebug,
+        JDB(Java Debugger,JDK的一部分),XDB,
+        Perl Debugger,Python Debugger的可视化图形前端)
+dh_make: make deb package
+
+===================
+for VGA driver
+nvidia-settings
 
 ===================
 for compiling pixhawk:
@@ -60,6 +76,7 @@ rdesktop
 (以下使用vnc)
 vncviewer
 vnc4server
+xtightvncviewer
 (神器)
 synergy
 quicksynergy
@@ -84,8 +101,11 @@ haroopad
 for documentation
 doxygen
 doxygen-gui(use command 'doxywizard' to open)
-sphinx
-sphinx_rtd_theme
+sphinx,sphinx_rtd_theme(pip install)
+texlive
+texlive-xetex
+texstudio 400多M...
+perl-tk, xzdec:	for texlive宏包管理器 tlmgr
 
 ===================
 for gitbook, not working!
@@ -102,13 +122,16 @@ parole
 mplayer
 
 ===================
-for computer vision
 opencv-2.4.13
+libgtk2.0-dev, pkg-config, libavcodec-dev, libavformat-dev, libswscale-dev
+
+for computer vision
 meshlab v1.3.2
 
 for SLAM(github.com/raulmur/ORB_SLAM)
 libpcl-all      : PCL library
 libboost-all-dev
+(http://wiki.ros.org/indigo/Installation/Ubuntu)
 ros-indigo-desktop-full : for ubuntu 14.04, including: ROS, rqt, rviz,
     robot-generic libraries, 2D/3D simulators and 2D/3D perception.
     Indigo uses Gazebo 2(a robot simulation tool).
