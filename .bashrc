@@ -116,33 +116,33 @@ fi
 ##################################################
 # added by FANGYOU !!!!
 ##################################################
-# compiler for compiling pixhawk
-export PATH=$PATH:/home/quad906/Documents/linux_software/gcc-arm-none-eabi-4_9-2015q3/bin
-# ccache for faster builds
-export PATH=$PATH:/usr/lib/ccache
-# for SITL
-export PATH=$PATH:/home/quad906/Github/ardupilot/Tools/autotest
-export PATH=$PATH:/usr/lib/ccache:$PATH
+## compiler for compiling pixhawk
+#export PATH=$PATH:/home/quad906/Documents/linux_software/gcc-arm-none-eabi-4_9-2015q3/bin
+## ccache for faster builds
+#export PATH=$PATH:/usr/lib/ccache
+## for SITL
+#export PATH=$PATH:/home/quad906/Github/ardupilot/Tools/autotest
+#export PATH=$PATH:/usr/lib/ccache:$PATH
 
-# vim seems terrible in terminal due to that terminal does not support 256color by default.
+## vim seems terrible in terminal due to that terminal does not support 256color by default.
 export TERM=xterm-256color
 
 ##################################################
-# texlive 2014
-export MANPATH=/usr/local/texlive/2014/texmf-dist/doc/man:$MANPATH
-export INFOPATH=/usr/local/texlive/2014/texmf-dist/info:$INFOPATH
+## texlive 2014
+#export MANPATH=/usr/local/texlive/2014/texmf-dist/doc/man:$MANPATH
+#export INFOPATH=/usr/local/texlive/2014/texmf-dist/info:$INFOPATH
 
 ##################################################
-# this works together with .compile_opencv.sh for opencv
+## this works together with .compile_opencv.sh for opencv
 alias opencv="~/.compile_opencv.sh"
 
 ##################################################
-# ROS environment setup
-source /opt/ros/indigo/setup.bash
+## ROS environment setup
+#source /opt/ros/indigo/setup.bash
 
 ##################################################
-# for ORB_SLAM(github.com/raulmur/ORB_SLAM)
-export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:/home/quad906/Github/computer_vision/ORB_SLAM
+## for ORB_SLAM(github.com/raulmur/ORB_SLAM)
+#export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:/home/quad906/Github/computer_vision/ORB_SLAM
 
 ##################################################
 # make 'man' display colorful characters
@@ -153,3 +153,8 @@ export LESS_TERMCAP_se=$'\E[0m'
 export LESS_TERMCAP_so=$'\E[01;44;33m'
 export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;32m'
+
+##################################################
+# Python auto complete in OSX
+# https://rayed.com/wordpress/?p=1372
+export PYTHONSTARTUP=$HOME/.pythonrc.py
