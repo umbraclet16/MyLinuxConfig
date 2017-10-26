@@ -21,12 +21,13 @@ Plugin 'VundleVim/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 "--------------------------------------------------
+Plugin 'vim-scripts/indentpython.vim'   " for python, 2017.10.24
 " plugin on GitHub repo
 "Plugin 'wincent/command-t'      " fast file navigation. Need ruby, not working
 Plugin 'tpope/vim-fugitive'     " Git wrapper
 " select increasingly larger regions of text using the same key combination
 Plugin 'terryma/vim-expand-region'
-"Plugin 'Valloric/YouCompleteMe'    " require VIM 7.4.143+
+Plugin 'Valloric/YouCompleteMe'    " require VIM 7.4.143+. updated to vim 8.0 on 2017.10.24
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 " or, https://github.com/vim-scripts/
@@ -282,7 +283,8 @@ let Tlist_Auto_Open=0                " Automatically open taglist window on Vim 
 let Tlist_Auto_Update=1              " Automatically update the taglist to include newly edited files
 let Tlist_Close_On_Select=0          " Automatically close the taglist window when a tag or file is selected
 let Tlist_Compact_Format=0           " Remove extra information and blank lines from the taglist window
-let Tlist_Ctags_Cmd="/usr/bin/ctags" " Specify the path to the ctags utility
+let Tlist_Ctags_Cmd="/usr/local/bin/ctags" " Specify the path to the ctags utility.
+" changed from "/usr/bin" on 2017.10.24 due to some error
 let Tlist_Display_Prototype=1        " Show prototypes instead of the tag names in the taglist window
 let Tlist_Display_Tag_Scope=1        " Show tag scope next to the tag name
 let Tlist_Enable_Fold_Column=1       " Show the fold indicator column in the taglist window
@@ -668,3 +670,76 @@ if !exists(":DiffOrig")
  \ | wincmd p | diffthis
 endif
 "===============================================================
+" python config 2017.10.24
+
+"" python indent, PEP8 style
+"au BufNewFile,BufRead *.py
+            "\ set tabstop=4 |
+            "\ set softtabstop=4 |
+            "\ set shiftwidth=4 |
+            "\ set textwidth=79 |
+            "\ set expandtab |
+            "\ set autoindent |
+            "\ set fileformat=unix |
+"" set indent for different files for full stack development
+au BufNewFile,BufRead *.js, *.html, *.css |
+            \ set tabstop=2 |
+            \ set softtabstop=2 |
+            \ set shiftwidth=2 |
+
+" python with virtualenv support
+py << EOF
+import os.path
+import sys
+import vim
+if 'VIRTUA_ENV' in os.environ:
+    project_base_dir = os.environ['VIRTUAL_ENV']
+    sys.path.insert(0, project_base_dir)
+    activate_this = os.path.join(project_base_dir,'bin/activate_this.py')
+    execfile(activate_this, dict(__file__=activate_this))
+EOF
+
+"ignore files in NERDTree
+let NERDTreeIgnore=['\.pyc$', '\~$']
+
+ "I don't like swap files
+ set noswapfile
+ "------------Start Python PEP 8 stuff----------------
+ " Number of spaces that a pre-existing tab is equal to.
+ au BufRead,BufNewFile *py,*pyw,*.c,*.h set tabstop=4
+
+ "spaces for indents
+ au BufRead,BufNewFile *.py,*pyw set shiftwidth=4
+ au BufRead,BufNewFile *.py,*.pyw set expandtab
+ au BufRead,BufNewFile *.py set softtabstop=4
+
+ " Use the below highlight group when displaying bad whitespace is desired.
+ highlight BadWhitespace ctermbg=red guibg=red
+
+ " Display tabs at the beginning of a line in Python mode as bad.
+ au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
+ " Make trailing whitespace be flagged as bad.
+ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+
+ " Wrap text after a certain number of characters
+ au BufRead,BufNewFile *.py,*.pyw, set textwidth=100
+
+ " Use UNIX (\n) line endings.
+ au BufNewFile *.py,*.pyw,*.c,*.h set fileformat=unix
+
+ " For full syntax highlighting:
+ let python_highlight_all=1
+ syntax on
+
+ " Keep indentation level from previous line:
+ autocmd FileType python set autoindent
+
+ " make backspaces more powerfull
+ set backspace=indent,eol,start
+
+
+ "Folding based on indentation:
+ autocmd FileType python set foldmethod=indent
+ "use space to open folds
+ nnoremap <space> za
+ "----------Stop python PEP 8 stuff--------------
