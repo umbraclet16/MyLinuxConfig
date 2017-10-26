@@ -1,0 +1,5 @@
+brew
+macvim(dependencies: pkg-config, readline, sqlite, gdbm, openssl, python, cscope)
+go2shell: open shell in current directory.
+(open settings: open -a Go2Shell --args config)
+oh-my-zsh
