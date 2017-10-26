@@ -1,3 +1,7 @@
 To set up vim environment, copy .vimrc and .vim to ~/.
 Then clone Vundle to .vim/:
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+Vim plugin 'YouCompleteMe' needs manual compilation and installation.
+Just execute the script install.py in .vim/bundle/YouCompleteMe/ and it will
+be fine.
